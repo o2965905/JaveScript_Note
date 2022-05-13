@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+<!--
+        ﹝各程式的變數宣告方式﹞
+        php:
+        變數 $name
+        字串相加 "Hello".$name
+
+        js:
+        變數 name
+        字串相加 "Hello" + name
+-->
+
+<!--
+        alert()彈出對話視窗,但無法輸入資料
+        prompt()彈出對話視窗,讓使用者可以輸入資料 
+        語法:prompt('對話框的提示文字',"對話框輸入欄位的預設值")
+        範例:prompt('input your name',"your name");
+-->
+<script>
+
+/*
+    ﹝練習一﹞
+    在對話視窗輸入名字 ,然後在console.log會出現 Hi 名字~~
+    
+    方法1:prompt()函式
+    let name = prompt('input your name',"your name");
+    console.log(name);
+    console.log("Hi " + name);
+*/
+
+
+/*
+    ﹝練習二﹞
+    輸入兩個數字,然後相加,console.log呈現相加結果
+    提示:字串轉數字
+    
+    方法1: parseInt()函式
+    let num1 = prompt('input num1',0);
+    let num2 = prompt('input num2',0);
+    result = parseInt(num1) + parseInt(num2);
+    console.log(result);
+    
+    方法2: Number()函式
+    let num1 = prompt('input num1',0);
+    let num2 = prompt('input num2',0);
+    result = Number(num1) + Number(num2);
+    console.log(result);
+*/
+
+
+/*
+    ﹝練習三﹞
+    輸入兩個數字,判斷數字大小,誰大 或者 等於 您輸入錯誤
+    提示: 使用 if else
+
+    方法1:
+    let num1 = prompt("input NUM1", 0);
+    let num2 = prompt("input NUM2", 0);
+
+    if(Number(num1)>Number(num2)){
+        alert(num1 +"大於" +num2);
+        console.log(num1 +"大於" +num2);
+    }else{
+        alert(您輸入錯誤);
+        console.log(您輸入錯誤);
+    }
+
+    方法2:
+    let num1 = parseInt(prompt("input num1", 0));
+    let num2 = parseInt(prompt("input num2", 0));
+    
+    console.log("num1 = " + num1);
+    console.log("num2 = " + num2);
+
+    if (num1 > num2) {
+        console.log("num1>num2");
+    } else if (num2 > num1) {
+        console.log("num1<num2");
+    } else if (num1 == num2) {
+        console.log("num1=num2");
+    } else {
+        console.log("erroe");
+    }
+*/
+
+
+
+/*    
+    ﹝練習四﹞
+    1.輸入存錢數量 
+        設變數為save
+    2.買東西的錢多少 
+        設變數為buy
+    3.找零多少 
+        設變數為money
+    4.如果不夠,顯示'無法扣款'
+    5.最後顯示餘額 
+        設變數為result
+
+        console.log版本:
+        let save = parseInt(prompt('input save',0));
+        console.log("本次存入 = " + save);
+        let buy = parseInt(prompt('input buy',0));
+        
+        if(save>buy){
+            result = save - buy ;
+            save = result;
+            console.log("購買商品金額=" + buy);
+        }else{
+            consoole.log("無法扣款");
+        }
+        
+        視窗版本:
+        let num1 = prompt("存錢數量", 0);
+        let num2 = prompt("買東西的錢", 0);
+        
+        if (Number(num1) > Number(num2)) {
+            result = Number(num1) - Number(num2);
+            alert("剩"+result+"元");
+        } else if(Number(num1) < Number(num2)){
+            result = Number(num2) - Number(num1);
+            alert("不夠"+result+"元");
+        }else if(Number(num1) == Number(num2)){
+            alert("剛剛好");
+        }
+*/
+</script>
+
+</body>
+
+</html>
