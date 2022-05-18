@@ -148,3 +148,61 @@
     alert('最終存款 =>' + save);
         
 */
+
+/*
+    練習六
+    1.承接練習五,多一個存錢動作
+
+    方法:
+    let save = parseInt(prompt('目前存款金額 ?',0));
+    console.log('存款 =>' + save ); 
+    let action = parseInt(prompt('後續動作 1.領錢 2.轉帳 3.存錢',0));
+    console.log('動作 =>' + action);
+        
+    switch(action){
+        case 1:
+            console.log("領錢中");
+            let withdraw = parseInt(prompt('領多少錢 ?',0));
+            console.log('領錢金額 =>' + withdraw);
+            if(save>=withdraw){
+                console.log("領錢成功!");
+                save = save - withdraw;
+            }else{
+                console.log("餘額不足,領錢失敗!");
+            }
+            console.log('最終存款 =>' + save);
+            break;
+                
+        case 2:
+            console.log("轉帳中");
+            let transferID = prompt('本次轉入帳號 ?',0);
+            console.log('本次轉入帳號 =>' + transferID); 
+            let transferMoney = parseInt(prompt('轉多少錢 ?',0));
+            console.log('轉帳金額 =>' + transferMoney);
+            if(save>=transferMoney){
+                console.log("轉帳成功!");
+                save = save - transferMoney;
+            }else{
+                console.log("轉帳失敗!");
+            }
+            console.log("最終存款 =>" + save);
+            break;
+                    
+        case 3:
+            console.log("存錢中");
+            let saveMoney = parseInt(prompt('存多少錢 ?',0));
+            console.log('存錢金額 =>' + saveMoney);
+            if(save >=saveMoney){
+                console.log("存錢成功!");
+                save = save - saveMoney;
+            }else{
+                console.log("金額錯誤");
+            }
+            console.log("最終存款 =>" + save);
+            break;
+            
+        default:
+        break;
+    }
+        alert('最終存款 =>' + save);
+    */           
