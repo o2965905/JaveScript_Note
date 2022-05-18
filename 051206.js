@@ -118,7 +118,7 @@
             console.log("領錢中");
             let withdraw = parseInt(prompt('領多少錢 ?',0));
             console.log('領錢金額 =>' + withdraw);
-            if(save>withdraw){
+            if(save>=withdraw){
                 console.log("領錢成功!");
                 save = save - withdraw;
             }else{
@@ -133,7 +133,7 @@
             console.log('本次轉入帳號 =>' + transferID); 
             let transferMoney = parseInt(prompt('轉多少錢 ?',0));
             console.log('轉帳金額 =>' + transferMoney);
-             if(save>transferMoney){
+             if(save>=transferMoney){
                 onsole.log("轉帳成功!");
                 save = save - transferMoney;
             }else{
@@ -145,6 +145,6 @@
             default:
             break;
             }
-
+    alert('最終存款 =>' + save);
         
 */
