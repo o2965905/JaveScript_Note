@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- onclick用法  -->
+
+    <!-- 
+        按下button ,顯示"Hello JavaScript!" 
+        提示:直接在 button + onclick ,去抓id
+    -->
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+        myButton
+    </button>
+    <br><br><br>
+    <div id="demo"></div>
+
+    <!--
+        按下button ,跳窗顯示"onclick ok" 
+        提示:button + onclick ,onclick 用 function 函式呈現結果
+    -->
+    <button type="button" onclick="myFun()">funtion button</button>
+
+    <script>
+        function myFun() {
+            alert(`onclick ok`);
+        }
+    </script>
+
+</body>
+
+</html>

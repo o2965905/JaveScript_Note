@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myClass">Hello myClass1</div>
+    <div class="myClass">Hello myClass2</div>
+
+    <script>
+        //練習:指定 myClass2 由紅色變藍色
+        const myClass = document.getElementsByClassName('myClass');
+        console.log(myClass[0].innerText);
+        myClass[1].style.color = "blue";
+    </script>
+</body>
+
+</html>

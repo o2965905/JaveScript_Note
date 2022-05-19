@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        練習:num1 + num2 result 顯示結果
+    -->
+    <input type="text" name="num1" id="num1" placeholder="num1 = ?" required>
+    <span> + </span>
+    <input type="text" name="num2" id="num2" placeholder="num2 = ?" required>
+    <br>
+    <button id="myBtn">button</button>
+    <br>
+    <div id="result">結果為 = </div>
+
+
+
+    <script>
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+        const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+
+        //myBtn.觸發事件('什麼事件',要做什麼動作){做的動作}
+        myBtn.addEventListener('click',function(){
+            let num1 = parseInt(num1Input.value);
+            let num2 = parseInt(num2Input.value);
+            console.log(num1 + num2);
+            sum = num1 + num2;
+            result.innerText = `結果為 =  ${sum}`; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="queryClass">query id test</div>
+    <br>
+    <div class="queryClass">query id test</div>
+    <br>
+    <div id="result">123456</div>
+    <br>
+    <button id="myBtn">button</button>
+
+    <script>
+        //練習: div 使用 button 切換 query 顏色 = 由黑變紅 ,切換 result 的'123456' = 'div 切換成功 666'
+        const queryAllClass = document.querySelectorAll('.queryClass');
+        const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+
+
+        //元件,觸發事件('click點擊事件',動作要做什麼)
+        myBtn.addEventListener('click', function () {
+            for (const key in queryAllClass) {
+                console.log(key);
+                // 非數字的key擋掉
+                if(!isNaN(key)){
+                    queryAllClass[key].style.color = "red";
+                }
+            }
+            result.innerText = "div 切換成功 666";
+        });
+    </script>
+</body>
+
+</html>

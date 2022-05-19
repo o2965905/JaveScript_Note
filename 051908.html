@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <button id="myBtn">button</button>
+    <div id="result">123456</div>
+    
+    <script>
+        //練習: button 切換 result 結果 ,由'123456'變成'div 切換成功 666'
+        const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+       
+        //元件,觸發事件('click點擊事件',動作要做什麼)
+        myBtn.addEventListener('click',function(){
+            result.innerText = "div 切換成功 666";
+        });
+    </script>
+</body>
+</html>

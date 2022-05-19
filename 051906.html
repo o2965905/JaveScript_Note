@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="queryClass">query id test</div>
+    <div class="queryClass">query id test</div>
+
+    <script>
+        //練習:抓class改顏色(注意 class = . )
+        const queryAllClass = document.querySelectorAll('.queryClass');
+        
+        //方法1.使用 for 迴圈
+        for (let i = 0; i < queryAllClass.length; i++) {
+            queryAllClass[i].style.color = "red";
+        }
+        
+    /*
+        //方法2.使用 for in
+        for (const key in queryAllClass) {
+            queryAllClass[key].style.color = "yellow";
+        }
+    */
+       
+    </script>
+</body>
+
+</html>
