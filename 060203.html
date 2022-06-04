@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //console.log 99乘法表 + 數字前面補 0 
+        /*
+            01*01=01 .... 01*09=09
+            02*01=02 .... 02*09=18
+            09*01=09 .... 09*09=81
+        */
+    
+        //1.蓋大樓 : 外圈 內圈
+        //2.console.log 99 乘法表
+        //3.數字先轉成字串
+        //4.字串再轉回數字
+    
+        for(let i=1;i<=9;i++){ //蓋大樓 :外圈
+            //console.log(i);  //確認是否蓋9層
+    
+            for(let j=1;j<=9;j++){ //蓋大樓 :內圈
+                //1.數字轉字串
+                let iStr = i.toString();
+                let jStr = j.toString();
+                let ijStr =(i*j).toString();
+                //console.log(iStr);
+                //console.log(jStr);
+                //console.log(ijStr);
+                //console.log(typeof(ijStr));
+                //console.log(ijStr);
+
+                // 2. 字串轉數字 = string -> padStart (數字補 0 )
+
+                let iStrChange = iStr.padStart(2,0);
+                let jStrChange = jStr.padStart(2,0);
+                let ijStrChange = ijStr.padStart(2,0);
+
+                document.write(`${iStrChange} * ${jStrChange} = ${ijStrChange}` + "&nbsp;&nbsp;&nbsp;&nbsp");
+                
+            }
+            document.write("<br>");
+            
+        }
+
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+/*
+        *
+       ***
+      *****
+     *******
+    *********
+     *******
+      *****
+       ***
+        *
+*/
+
+//先蓋上半部
+let input = 5;
+for(let i = 1; i <= input; i++){ //蓋大樓(上半部的)
+    //document.write(i); 確認蓋幾樓
+
+    for(let j = 1; j <= (input-i) ; j++){ //印空格
+        //document.write(j); 確認空格位置
+        document.write("&nbsp")
+    }
+
+    for(let k =1; k <=(2*i-1);k++){ //印星星
+        document.write("*");
+    }
+    
+    document.write("<br>");
+
+}
+
+//蓋下半部
+for(let i =input;i>1;i--){ //蓋大樓(下半部的)
+    //document.write(i); 確認蓋幾樓
+
+    for(let j=0;j <= (input - i); j++){ //印空格
+        //document.write(j); 確認空格位置
+        document.write("&nbsp");
+    }
+
+    for(k=(((i-1)*2)-1);k>0;k--){ //印星星
+        document.write("*");
+    }
+
+    document.write("<br>");
+
+}
+
+</script>
+
+
+</body>
+</html>

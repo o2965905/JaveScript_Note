@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    //條件控制 : if...else if
+    //條件 : 泰山咖啡店 1.身分證有 3 4 5 的 2.會員身分
+    //1. 345 => 1折
+    //2. 678 => 5折
+    //3. 90  => 7折
+    //4. 沒有會員 => 95折
+
+    // let 身分證字號的變數 string
+    // let 會員身分 boolen : true / false
+
+    // 1. get 身分證字號 ->
+    // 有 345 /678 / 90?
+    // 2. 看有沒有會員
+
+    let id = "F123456789"; // let 身分證字號的變數 string
+    let member = true;     // let 會員身分 boolen : true / false
+    let idStr = "";        // 先預設身分證字串為空字串
+    let idResult = "";     // 判斷是否會員 
+    let conditionNum = "";
+
+    
+    // 3 4 5 => A
+    if(idResult.length==0){ //先宣告空值再依if結果給值 ( A / B / C )
+                            //因為是空值所以length==0,就會跑if,直到給值之後length !=0 ,不再執行if
+        conditionNum = "3";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "A";
+            }
+    }
+
+    if(idResult.length==0){
+        conditionNum = "4";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "A";
+            }
+    }
+
+    if(idResult.length==0){
+        conditionNum = "5";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "A";
+            }
+    }
+
+    // 6 7 8 =>B
+    if(idResult.length==0){
+        conditionNum = "6";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "B";
+            }
+    }
+
+    if(idResult.length==0){
+        conditionNum = "7";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "B";
+            }
+    }
+
+    if(idResult.length==0){
+        conditionNum = "8";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "B";
+            }
+    }
+
+    // 9 0 => C
+    if(idResult.length==0){
+        conditionNum = "9";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "C";
+            }
+    }
+
+    if(idResult.length==0){
+        conditionNum = "0";
+        idStr = id.search(conditionNum);
+            if(idStr > 0){
+                idResult = "C";
+            }
+    }
+
+    console.log('id',id);
+    console.log('member',member);
+    console.log('idResult',idResult);
+    console.log('idStr',idStr);
+    console.log('conditionNum',conditionNum);
+
+    // idResult & isMember ?
+    // A && member => 1折
+    // B && member => 5折
+    // C && member => 7折
+    // 沒有會員 => 95折
+
+    if(member){
+        if(idResult == "A"){
+            console.log("會員打1折");
+        }else if(idResult == "B"){
+            console.log("會員打5折");
+        }else if(idResult == "C"){
+            console.log("會員打7折");
+        }
+    }else{
+            console.log("打95折");
+    }
+</script>
+
+</body>
+</html>

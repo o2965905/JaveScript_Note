@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 0.5px solid lightslategray;
+        }
+        .red{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //練習 99 乘法表 = 插入表格 + 第二行變色
+    
+            //這裡寫入table
+            document.write('<table>')
+    
+            for(let i=1;i<=9;i++){
+                //這裡寫入tr
+                if(i ==2){
+                    document.write('<tr class="red">');
+                }else{
+                    document.write('<tr>');
+                }
+    
+            for(let j=1;j<=9;j++){
+                        
+                let iStr = i.toString();
+                let jStr = j.toString();
+                let ijStr =(i*j).toString();
+                        
+                let iStrChange = iStr.padStart(2,0);
+                let jStrChange = jStr.padStart(2,0);
+                let ijStrChange = ijStr.padStart(2,0);
+                        
+                //這裡寫入td
+                document.write(`<td> ${iStrChange} * ${jStrChange} = ${ijStrChange} </td>`);
+                        
+            }
+                document.write('</tr>')
+            }
+            document.write('</table>');
+    </script>
+</body>
+</html>

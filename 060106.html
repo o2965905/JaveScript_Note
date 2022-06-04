@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+/*
+
+    *
+    **
+    ***
+    ****
+    *****
+
+*/
+
+//﹝巢狀迴圈 = 兩層迴圈 = 迴圈包迴圈﹞
+//練習畫星星 : 輸入 input = 5 時,會顯示如下圖
+//1.第一層 inpit 5 => 5層
+//2.第二層
+
+let input = 5;
+for(let i =0;i<input;i++){ //1.第一層 inpit 5 => 5層
+    document.write('i =>' + i + ',' + '&nbsp');
+    //2.第二層
+    for(let j =0;i>=j;j++){
+        document.write('j = ' + j + '&nbsp');
+    }
+    //2.end
+    document.write("<br>");
+}
+
+</script>
+
+
+</body>
+</html>

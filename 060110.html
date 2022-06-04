@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+/*
+        *
+       ***
+      *****
+     *******
+    *********
+*/
+
+let input = 5;
+for(let i = 1; i <= input; i++){ //蓋大樓的地方
+
+    for(let j = 1; j <= (input - i) ; j++){ //寫入空格的地方,因為i從1開始,所以這裡要(input-i)
+
+        document.write("&nbsp");
+    }
+
+    for(let k =1; k <=(2*i-1);k++){ //寫入星星的地方
+        
+        document.write("*");
+    }
+    
+    document.write("<br>");
+}
+</script>
+
+
+</body>
+</html>

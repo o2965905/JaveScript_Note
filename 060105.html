@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+/*
+﹝for迴圈﹞
+練習畫星星 : 輸入 input = 5 時,會顯示如下圖
+
+*
+**
+***
+****
+*****
+
+*/
+
+let sum = '';
+let input = 5;
+for(let i =0;i<input;i++){
+    //sum = sum + '*';
+    sum += '*';
+
+    //這裡 i+1 ,是為了讓網頁從 1 開始顯示
+    //不然會變成以下方式
+    /*
+        0 => *
+        1 => **
+        2 => ***
+        3 => ****
+        4 => *****
+    */
+
+
+    //console.log(`${i+1} => ${sum}`);
+    document.write(`${i+1} => ${sum} <br>`);
+}
+
+
+</script>
+
+
+</body>
+</html>

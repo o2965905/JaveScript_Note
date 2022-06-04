@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+<script>
+    //練習 99 乘法表 = 把 2 那行顏色變成紅色
+    for(let i=1;i<=9;i++){
+        
+        if(i == 2){
+            document.write('<p class="red">');
+        }else{
+            document.write('<p>');
+        }
+        for(let j=1;j<=9;j++){
+            
+            let iStr = i.toString();
+            let jStr = j.toString();
+            let ijStr =(i*j).toString();
+
+            let iStrChange = iStr.padStart(2,0);
+            let jStrChange = jStr.padStart(2,0);
+            let ijStrChange = ijStr.padStart(2,0);
+
+            document.write(`${iStrChange} * ${jStrChange} = ${ijStrChange}` + "&nbsp;&nbsp;&nbsp;&nbsp");
+
+        }
+        document.write('</p>');
+        //document.write("<br>");  
+        //p標籤本身有段行功能,所以這裡把 <br> 註解掉
+    }
+</script>
+
+
+</body>
+</html>
