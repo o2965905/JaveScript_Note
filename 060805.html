@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*  
+        while 樂透開獎
+        規則(1)1-49 六個大樂透號碼
+        規則(2)樂透號碼,不能重複 <== 防呆
+    */
+
+    /*  步驟1.取出亂數 1-49 (min & max 都要包括)
+        提示:Math.random
+        Math.floor(Math.random()*(max - min))+min; //min有包括,max沒有包刮
+        Math.floor(Math.random()*(max - min+1))+min; //min,max都有包括
+    */
+
+    /*  步驟2.要跑六次  */
+
+    /*  步驟3.防呆機制
+        3-1 增加lottery陣列 = lottery=[]
+        3-2 push()用來新增元素到陣列最後面 = lottery.push(num)
+    
+        ﹝範例﹞
+        let fruits = ['Apple', 'Banana'];
+        fruits.push('Orange');
+        console.log(fruits);// 輸出 ["Apple", "Banana", "Orange"]
+        
+        3-3 array 內容是否重複
+    */
+    
+    
+    
+    
+    let i=1;
+    let lottery=[];
+
+    //2.要跑六次,用while迴圈執行
+    while(lottery.length<6){ //字串長度從0開始算,lottery array長度=[0,1,2,3,4,5],所以這裡要 < 6 
+
+        let num =Math.floor(Math.random()*(49-1+1))+1;
+
+        
+        if(lottery.indexOf(num)<0){ //3.判斷樂透號碼是否有重複,用if判斷式
+
+            
+            lottery.push(num); //3-2  push()用來新增元素到陣列最後面
+            
+            //重複的號碼就會跳過,直到六個號碼都不重複
+            document.write(`第${i}次開獎---第${lottery.length}個號碼=>${num}<br>`);
+
+        }
+
+        i++;
+
+    }
+
+
+</script>
+
+
+</body>
+</html>

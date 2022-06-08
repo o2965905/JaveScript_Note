@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //while 練習 : 成績加總
+
+        /*
+        --------------------------------
+        輸入學生數量
+        student  國文 ? 分
+                 英文 ? 分
+                 數學 ? 分
+        最後畫面呈現 : 計算總分 與 平均分數
+        ---------------------------------
+        範例:
+        輸入學生 2 位
+        ﹝畫面呈現﹞
+        學生1 國文=60分 
+              英文=70分
+              數學=80分
+        學生1 總分=210分 平均分數=70分
+
+        學生2 國文=70分 
+              英文=80分 
+              數學=90分
+        學生2 總分=240分 平均分數=80分
+        ----------------------------------
+        */
+
+        //輸入學生數量
+        let input=Number(prompt("請輸入學生數量"));
+        //console.log("input",input); //確認有抓到資料
+
+        let i=1;
+        while(i<=input){
+
+            //輸入學生 國文/英文/數學 分數
+            let a=Number(prompt(`學生${i}請輸入國文分數`));
+            let b=Number(prompt(`學生${i}請輸入英文分數`));
+            let c=Number(prompt(`學生${i}請輸入數學分數`));
+            //console.log("國文",a); //確認有抓到資料
+            //console.log("英文",b); //確認有抓到資料
+            //console.log("數學",c); //確認有抓到資料
+
+            
+            let sum=a+b+c;//總分
+            let avg=sum/3;//平均分數
+
+            //畫面呈現
+            //student  國文 ? 分
+            //         英文 ? 分
+            //         數學 ? 分
+            //學生     總分 與 平均分數
+            document.write(`學生${i}成績分數<br>`);
+            document.write(`國文=${a}分<br>英文=${b}分<br>數學=${c}分 <br>`);
+            document.write(`學生${i} 總分=${sum}分 平均分數=${avg}分<br><br>`);
+            
+            i++;
+        }
+        
+    </script>
+</body>
+</html>

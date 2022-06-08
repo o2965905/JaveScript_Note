@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //for 練習 : 成績加總
+        
+        let input=Number(prompt("請輸入學生數量"));
+
+        for(let i=1;i<=input;i++){
+
+                let a=Number(prompt(`學生${i}請輸入國文分數`));
+                let b=Number(prompt(`學生${i}請輸入英文分數`));
+                let c=Number(prompt(`學生${i}請輸入數學分數`));
+
+                let sum=a+b+c;
+                let avg=sum/3;
+
+                document.write(`學生${i}成績分數<br>`);
+                document.write(`國文=${a}分<br>英文=${b}分<br>數學=${c}分 <br>`);
+                document.write(`學生${i} 總分=${sum}分 平均分數=${avg}分<br><br>`);
+                
+        }
+    </script>
+</body>
+</html>
