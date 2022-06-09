@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<script>
+    //額外補充 
+    
+    //push 增加一個value到array最後面
+    let color=["red","blue","green"];
+    console.log('color',color);// ['red', 'blue', 'green']
+    color.push("pink");
+    console.log('color',color);//['red', 'blue', 'green', 'pink']
+
+    
+    //pop  減少一個value在array最後面
+    let num=[1,3,5,7];
+    console.log('num',num);//[1,3,5,7]
+    num.pop();
+    console.log('num',num);//[1,3,5]
+
+    //看array 長度 = array length
+    let food=["apple","peach","banana","kiwi"];
+    console.log(food.length);//看字串長度
+
+    //更改array的內容
+    food[1]=1234;
+    console.log('food',food);//['apple', 1234, 'banana', 'kiwi']
+
+    //shift 刪除第一個value
+    let shiftArr=[1,2,3];
+    shiftArr.shift();
+    console.log('shiftArr',shiftArr);//[2,3]
+    
+    //unshift 增加一個value到最前面
+    let unshiftArr=[1,2,3];
+    unshiftArr.unshift(4);
+    console.log('unshiftArr',unshiftArr);//[4,1,2,3]
+
+    //splice 移除array的value
+    let spliceArr=[1,2,3,4,5,6,7,8];
+    spliceArr.splice(4);
+    console.log('spliceArr',spliceArr)//[1,2,3,4]
+
+    //splice(起始位置,結束位置) 移除指定範圍內的value
+    let newspliceArr=[1,2,3,4,5,6,7,8];
+    newspliceArr.splice(0,2);
+    console.log('newspliceArr',newspliceArr);//[3,4,5,6,7,8]
+
+    //toString() 把 array 轉成 string
+    let stringArr=['amy','bob','cat'];
+    let getString = stringArr.toString();
+    console.log(getString);//amy,bob,cat
+
+    //concat 兩個array相加
+    let arr1=[1,2,3];
+    let arr2=[7,8,9];
+    let arr3=arr1.concat(arr2);
+    console.log('arr3',arr3);//[1, 2, 3, 7, 8, 9]
+
+    //展開運算子(...) = 兩個array相加
+    let a=[6,6];
+    let b=[7,7];
+    let c=[...a,...b];
+    console.log('c',c);//[6, 6, 7, 7]
+
+    //indexOf 搜尋指定的物件,並回傳索引值
+    let arrIndexOf=['amy','bob','cat'];
+    console.log('arrIndexOf',arrIndexOf);  //['amy', 'bob', 'cat']
+    console.log(arrIndexOf.indexOf('amy'));//  0 
+    console.log(arrIndexOf.indexOf('bob'));//  1
+    console.log(arrIndexOf.indexOf('cat'));//  2
+    console.log(arrIndexOf.indexOf('dog'));// -1 ,因為沒有value,所以顯示-1
+
+
+</script>
+
+
+</body>
+
+</html>

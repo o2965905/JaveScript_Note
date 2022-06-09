@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<script>
+
+    //練習二
+    //array 加總 [1,2,3,4,5,6,7,8,9,10]
+
+    //foreach
+    let a=[1,2,3,4,5,6,7,8,9,10];
+    let sum=0
+
+    a.forEach(value=>{
+        sum += value;
+    })
+
+    console.log(sum);//55
+    
+
+    //reduce 
+    let i=[1,2,3,4,5,6,7,8,9,10];
+
+    let i1=i.reduce((total,value)=>{
+
+        console.log('total=>'+total);
+        console.log('value=>'+value);
+        console.log(`${total}+${value}`);
+        return total + value;
+        
+    });
+
+    console.log(i1);//55
+
+</script>    
+
+
+</body>
+
+</html>

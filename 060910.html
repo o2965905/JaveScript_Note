@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<script>
+    
+    //字串內的value加減乘除
+    //[1,3,5,7,9] => [2,6,10,14,18]
+
+
+    //foreach
+    let arr1=[1,3,5,7,9];
+    let newArr1=[];
+    arr1.forEach((value,key) =>{
+        newArr1.push(value*2)
+    });
+
+    console.log('arr1',arr1);//[1, 3, 5, 7, 9]
+    console.log('newArr1',newArr1);//[2, 6, 10, 14, 18]
+
+    //map
+    let arr2=[1,3,5,7,9];
+    let mapAerr=arr2.map(function(value){
+        return value*2;
+    });
+
+    console.log('arr2',arr2);//[1, 3, 5, 7, 9]
+    console.log('mapAerr',mapAerr);//[2, 6, 10, 14, 18]
+
+    //﹝精簡板﹞map 箭頭函式板本 = function 改 =>
+    let a=[1,3,5,7,9];
+    let a1=a.map((value)=>{
+        return value*2;
+    });
+    console.log('a',a);  //[1, 3, 5, 7, 9]
+    console.log('a1',a1);//[2, 6, 10, 14, 18]
+
+    //﹝精簡板2.0﹞當只有一行return 就可以捨去{} 與 return
+    let i=[1,3,5,7,9];
+    let i1=i.map((value)=>value*2);
+    console.log('i',i);  //[1, 3, 5, 7, 9]
+    console.log('i1',i1);//[2, 6, 10, 14, 18]
+
+    
+</script>    
+
+
+</body>
+
+</html>

@@ -72,3 +72,16 @@
 * [練習(23): 樂透選號(while迴圈)](060805.html)
 * [練習(24): 學生成績加總/平均分數(while迴圈)](060801.html)
 * [練習(25): 學生成績加總/平均分數(for迴圈)](060802.html)
+* [練習(26): 找出1-100的基數(使用for/while/do..while)](060901.html)
+* [練習(27): 找出0-1000可以被3與11除的數(使用for/while/do..while)](060902.html)
+
+### Array 陣列
+* [認識 Array](060903.html)
+* [練習(1): 顯示字串長度與內容(for迴圈)](060904.html)
+* [練習(2): 顯示字串長度與內容(forEach)](060905.html)
+* [練習(3): 建立array/console.log內容/使用forEach/array.push新增](060906.html)
+* [練習(4): push/pop/length/shift/unshift/splice/toString/concat/inde4xOf](060908.html)
+* [練習(5): 加減乘除(map)](060910.html)
+* [練習(6): ﹝1-3﹞領20個月;﹝4-9﹞領40個月](060911.html)
+* [練習(7): 篩選條件(forEach)/篩選條件(filter)](060912.html)
+* [練習(8): 加總(forEach)/加總(reduce)](060913.html)

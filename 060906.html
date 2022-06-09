@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<script>
+    //關聯式array = Associative Array
+    //JavaScript -> 沒有字串的關連式array 
+    //PHP -> 有字串的關連式陣列
+    
+
+    //js 都是 index array
+    let myArr=[1,3,5,7,9];
+    //單一呼叫 array[key]
+    console.log(myArr[0]);//網頁顯示 1
+    console.log(myArr[1]);//網頁顯示 3
+    console.log(myArr[2]);//網頁顯示 5
+    console.log(myArr[3]);//網頁顯示 7
+
+
+
+    //練習一 
+    //建立一個自己興趣的array
+    let color=["red","blue","green"];
+
+    //練習二
+    //key & value console.log 出來
+    console.log(color[0]);
+    console.log(color[1]);
+    console.log(color[2]);
+
+    //練習三
+    //foreach 抓出全部的興趣 (value跟key不能換位置)
+    color.forEach((value,key)=>{
+        console.log(value);
+        
+        // blue不要顯示出來,用key方式
+        // if(key !=1){
+        //    console.log(value);
+        // }
+        
+        // blue不要顯示出來,用value方式
+        // if(value!="blue"){
+        //    console.log(value);
+        // }
+
+    });
+
+    //練習四
+    //array.push 新增一個內容到array
+    color.push("yellow");
+    color.forEach((value,key)=>{
+        console.log(value);
+    });
+
+
+
+</script>
+
+
+</body>
+
+</html>
